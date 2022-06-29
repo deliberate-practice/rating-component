@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    min-height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+main{
+    position: relative;
+    height: 100vh;
+}
+.card{
+    background: hsl(213, 19%, 18%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+.submitted{
+    display: none;
+    padding: 1em;
+    text-align: center;
+}
+.rating__result{
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(216, 12%, 54%, 0.612);
+    width: fit-content;
+    border-radius: 1.2em;
+    padding: .3em 1.2em;
+    margin: 1em auto;
+    font-size: 15px
+}
+form#rating{
+    /* display: none; */
+}
+form#rating img{
+    padding: .8em;
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 1em;
+}
+.card__title{
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 100%);
+}
+.card__desc{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    margin: 1em 0;
+}
+.card__input input{
+    display: none;
+}
+.card__input{
+    display: flex;
+    justify-content: space-between;
+}
+.card__input label{
+    color: hsl(217, 12%, 63%);
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: hsl(216, 12%, 8%);
+    cursor: pointer;
+}
+.card__input label:hover{
+    color: #FFF;
+    background-color: hsl(25, 97%, 53%);
+}
+form button{
+    width: 100%;
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 2em;
+    border: 1px solid transparent;
+    font-family: 'Overpass', sans-serif;
+    color: #FFF;
+    letter-spacing: .1em;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: hsl(25, 97%, 53%);
+}
+form button:hover{
+    background: #FFF;
+    color: hsl(25, 97%, 53%);
+}
